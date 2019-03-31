@@ -11,12 +11,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('css/bootstrap-theme.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('css/elegant-icons-style.css') }}" rel="stylesheet" />
-    <link href="{{ URL::asset('css/font-awesome.css') }}" rel="stylesheet" />
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('css/style-responsive.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/elegant-icons-style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet" />
 </head>
 <body>
     <div id="app">
