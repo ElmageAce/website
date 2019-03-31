@@ -4,7 +4,7 @@
     </div>
 
     <!--logo start-->
-    <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+    <a href="{{ url('/') }}" class="logo"><img src="{{ asset('img/atmaevent/logo_sideways.png') }}" alt="Logo AtmaEvent Menyamping" width="150px" height="auto"></a>
     <!--logo end-->
 
     <div class="nav search-row" id="top_menu">
@@ -243,7 +243,7 @@
                         <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                     </li>
                     <li>
-                        <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                        <a href="{{ route('logout') }}"><i class="icon_key_alt"></i> Logout</a>
                     </li>
                     <li>
                         <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
