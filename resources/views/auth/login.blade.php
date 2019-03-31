@@ -6,7 +6,7 @@
             {{ csrf_field() }}
 
             <div class="login-wrap">
-                <p class="login-img"><img src="{{ URL::asset('img/atmaevent/logo_sideways.png') }}" alt="Logo AtmaEvent Menyamping" width="230px" height="auto"></p>
+                <p class="login-img"><img src="{{ asset('img/atmaevent/logo_sideways.png') }}" alt="Logo AtmaEvent Menyamping" width="230px" height="auto"></p>
                 <div class="input-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <span class="input-group-addon"><i class="icon_profile"></i></span>
                     <input id="email" type="text" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
