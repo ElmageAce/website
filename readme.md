@@ -32,7 +32,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 4. `cp env-example .env`
 5. modify the `.env` file:
    ```
-    make sure to PHP 7.2 version
+    NEW_UID=1001
+    NEW_GID=1002
+    TIMEZONE=Asia/Jakarta
+    PHP_MODULES_ENABLE=ioncube, blackfire
    ```
 6. put the project in `devilbox/data/www`.
 7. `cd data/www && git clone https://github.com/antoniuscs/website.git && cd ralali`
