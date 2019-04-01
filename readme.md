@@ -74,10 +74,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 note: additional step for Mac / linux, Run: `sudo chmod -R 777 storage/` 
  
 ## Frontend Setup & Material:
-1. [click here](resources/material).
-2. `npm install` in the root directory (not a `resource/material` folder).
-3. `npm run dev` This builds our assets but does not minify or produce a production-ready build.
-4. `npm run watch` Similar to `npm run dev` but will watch for changes to our assets and automatically re-compile any changed
+1. `npm install` in the root directory (not a `resource/material` folder).
+2. `npm run dev` This builds our assets but does not minify or produce a production-ready build.
+3. `npm run watch` Similar to `npm run dev` but will watch for changes to our assets and automatically re-compile any changed
 
 Note: 
 - `npm run dev` running automation on server development.
