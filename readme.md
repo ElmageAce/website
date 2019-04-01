@@ -68,8 +68,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
    - 1 additional line -> "127.0.0.1 website.loc"
    ```
    
-    ![alt text](readme_images/etc-hosts.png)
-	
 note: additional step for Mac / linux, Run: `sudo chmod -R 777 storage/` 
  
 ## Frontend Setup & Material:
