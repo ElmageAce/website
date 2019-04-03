@@ -9,7 +9,7 @@ $factory->define(Payment::class, function (Faker $faker) {
     $model_data = [
 		'participant_ids' => Participant::all()->pluck('id')->all(),
         'tickets' => Ticket::with(['event'])
-                    ->get(['id', 'price', 'qty','event_id','status'])->toArray(),
+                    ->get(['id', 'price', 'qty','event_id'])->toArray(),
 	];
     
     $tickets = $faker->randomElement($model_data['tickets']);
