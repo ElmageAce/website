@@ -16,7 +16,7 @@ $factory->define(Participant::class, function (Faker $faker) {
         'full_name' => $faker->name,
         'identity_number' => $faker->randomNumber(),
         'photo' => $faker->imageUrl($width = 200, $height = 200),
-        'sex' => $faker->gender,
+        'gender' => $faker->gender,
         'address' => $faker->address,
         'province_id' => $id,
         'city_id' => $id,
