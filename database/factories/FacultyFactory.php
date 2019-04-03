@@ -9,6 +9,5 @@ $factory->define(Faculty::class, function (Faker $faker) {
 
     return [
         'name' => $faker->campus,
-        'status' => true,
     ];
 });
