@@ -14,6 +14,5 @@ $factory->define(Ticket::class, function (Faker $faker) {
         'price' => $price,
         'event_id' => $faker->randomElement($event_id),
         'qty' => $qty,
-        'status' => true,
     ];
 });

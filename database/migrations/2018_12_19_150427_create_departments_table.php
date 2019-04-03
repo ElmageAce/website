@@ -19,8 +19,6 @@ class CreateDepartmentsTable extends Migration
             $table->unsignedInteger('faculty_id');
             $table->foreign('faculty_id')
                 ->references('id')->on('faculties')->onDelete('restrict');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

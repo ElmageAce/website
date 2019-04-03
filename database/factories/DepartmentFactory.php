@@ -12,6 +12,5 @@ $factory->define(Department::class, function (Faker $faker) {
     return [
         'name' => $faker->course,
         'faculty_id' => $faker->randomElement($faculty_id),
-        'status' => true,
     ];
 });

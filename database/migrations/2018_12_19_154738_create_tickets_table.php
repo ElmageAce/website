@@ -21,8 +21,6 @@ class CreateTicketsTable extends Migration
             $table->unsignedInteger('event_id');
             $table->foreign('event_id')
                 ->references('id')->on('events')->onDelete('restrict');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

@@ -36,8 +36,6 @@ class CreateEventsTable extends Migration
             $table->string('full_name_pic');
             $table->string('website_link')->nullable();
             $table->string('qrcode');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

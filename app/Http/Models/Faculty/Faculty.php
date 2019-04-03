@@ -13,7 +13,6 @@ class Faculty extends Model
     protected $fillable = [
         'id',
         'name',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

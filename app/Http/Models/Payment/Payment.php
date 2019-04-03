@@ -22,7 +22,6 @@ class Payment extends Model
         'subtotal',
         'total',
         'proof_payment',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

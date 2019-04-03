@@ -15,7 +15,7 @@ class Participant extends Model
         'full_name',
         'photo',
         'identity_number',
-        'sex',
+        'gender',
         'address',
         'province_id',
         'city_id',

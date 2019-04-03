@@ -13,7 +13,6 @@ class Performer extends Model
         'id',
         'full_name',
         'type',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

@@ -19,8 +19,6 @@ class CreateEventTypesTable extends Migration
             $table->string('type');
             $table->string('level');
             $table->unsignedInteger('total_points');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();    
         });

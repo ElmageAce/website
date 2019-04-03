@@ -18,8 +18,6 @@ class CreateCommittesTable extends Migration
             $table->string('full_name');
             $table->string('identity_number',20);
             $table->string('position');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

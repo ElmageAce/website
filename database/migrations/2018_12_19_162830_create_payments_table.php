@@ -28,8 +28,6 @@ class CreatePaymentsTable extends Migration
             $table->decimal('subtotal', 15, 2);
             $table->decimal('total', 15, 2);
             $table->string('proof_payment');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

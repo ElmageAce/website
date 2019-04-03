@@ -17,7 +17,6 @@ class Ticket extends Model
         'price',
         'qty',
         'event_id',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

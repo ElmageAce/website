@@ -18,7 +18,7 @@ class CreateParticipantsTable extends Migration
             $table->string('full_name');
             $table->string('photo')->nullable();
             $table->string('identity_number',20);
-            $table->string('sex');
+            $table->string('gender');
             $table->text('address');
             $table->unsignedInteger('province_id');
             $table->unsignedInteger('city_id');

@@ -18,7 +18,6 @@ class User extends Model
         'password',
         'userable_id',
         'userable_type',
-        'status',
     ];
 
     /**

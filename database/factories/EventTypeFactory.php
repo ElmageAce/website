@@ -9,6 +9,5 @@ $factory->define(EventType::class, function (Faker $faker) {
         'type' => $faker->word,
         'level' => $faker->word,
         'total_points' => mt_rand(1,25),
-        'status' => true,
     ];
 });

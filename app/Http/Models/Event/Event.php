@@ -31,7 +31,6 @@ class Event extends Model
         'full_name_pic',
         'website_link',
         'qrcode',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

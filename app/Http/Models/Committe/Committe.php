@@ -14,7 +14,6 @@ class Committe extends Model
         'full_name',
         'identity_number',
         'position',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

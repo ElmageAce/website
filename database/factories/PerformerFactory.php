@@ -8,6 +8,5 @@ $factory->define(Performer::class, function (Faker $faker) {
     return [
         'full_name' => $faker->name,
         'type' => $faker->jobTitle,
-        'status' => true,
     ];
 });

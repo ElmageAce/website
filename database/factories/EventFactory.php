@@ -30,6 +30,5 @@ $factory->define(Event::class, function (Faker $faker) {
         'full_name_pic' => $faker->tollFreeNumber,
         'website_link' => $faker->word,
         'qrcode' => $faker->ean13,
-        'status' => true,
     ];
 });

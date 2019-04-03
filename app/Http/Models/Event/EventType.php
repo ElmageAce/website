@@ -15,7 +15,6 @@ class EventType extends Model
         'type',
         'level',
         'total_points',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];

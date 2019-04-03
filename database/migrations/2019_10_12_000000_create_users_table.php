@@ -20,8 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->unsignedInteger('userable_id')->nullable();
             $table->string('userable_type')->nullable();
-            $table->boolean('status')
-                ->default(True);
             $table->rememberToken();
             $table->timestamps();
         });

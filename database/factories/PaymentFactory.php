@@ -26,6 +26,5 @@ $factory->define(Payment::class, function (Faker $faker) {
         'subtotal' => $subtotal,
         'total' => $qty * $subtotal,
         'proof_payment' => $faker->imageUrl($width = 200, $height = 200),
-        'status' => true,
     ];
 });

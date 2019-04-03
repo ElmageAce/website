@@ -17,8 +17,6 @@ class CreatePerformersTable extends Migration
             $table->increments('id');
             $table->string('full_name');
             $table->string('type');
-            $table->boolean('status')
-                ->default(True);
             $table->timestamps();
             $table->softDeletes();
         });

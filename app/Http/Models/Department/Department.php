@@ -15,7 +15,6 @@ class Department extends Model
         'id',
         'name',
         'faculty_id',
-        'status',
     ];
 
     protected $dates = ['deleted_at'];
