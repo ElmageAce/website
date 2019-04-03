@@ -35,7 +35,7 @@
                     @if (Route::has('login'))
                         <nav class="hide">
                             @auth
-                                <a href="{{ url('/dashboard') }}">Beranda</a>
+                                <a href="{{ route('home') }}">Beranda</a>
                             @else
                                 <a href="{{ route('login') }}">Login</a>
 
