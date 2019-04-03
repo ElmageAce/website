@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Event Management System">
+    <meta name="description" content="Dashboard Event Management System">
     <meta name="author" content="Antonius Christiyanto Saputra">
     <meta name="keyword" content="Event, Management, System, AtmaEvent">
 

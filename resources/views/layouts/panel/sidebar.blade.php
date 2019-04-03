@@ -2,13 +2,13 @@
     <div id="sidebar" class="nav-collapse ">
         <ul class="sidebar-menu">
             <li class="active">
-                <a class="" href="index.html">
+                <a class="" href="">
                     <i class="icon_house_alt"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" class="">
+                <a href="javascript:" class="">
                     <i class="icon_document_alt"></i>
                     <span>Forms</span>
                     <span class="menu-arrow arrow_carrot-right"></span>
@@ -46,7 +46,7 @@
             </li>
 
             <li class="sub-menu">
-                <a href="javascript:;" class="">
+                <a href="javascript:" class="">
                     <i class="icon_table"></i>
                     <span>Tables</span>
                     <span class="menu-arrow arrow_carrot-right"></span>
@@ -57,7 +57,7 @@
             </li>
 
             <li class="sub-menu">
-                <a href="javascript:;" class="">
+                <a href="javascript:" class="">
                     <i class="icon_documents_alt"></i>
                     <span>Pages</span>
                     <span class="menu-arrow arrow_carrot-right"></span>

@@ -1,95 +1,83 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ asset('frontend/img/favicon.ico') }}">
+    <meta name="description" content="Event Management System UAJY">
+    <meta name="keywords" content="event, management, system, atmaevent">
 
-        <title>Laravel</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/linearicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/availability-calendar.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/main.css') }}">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+</head>
 
-            .full-height {
-                height: 100vh;
-            }
+<body>
+<header class="default-header">
+    <div class="container">
+        <div class="header-wrap">
+            <div class="header-top d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#home"><img src="{{ asset('frontend/img/logo.png') }}" width="250px" height="auto"
+                                         alt="Logo AtmaEvent"></a>
+                </div>
+                <div class="main-menubar d-flex align-items-center">
+                    @if (Route::has('login'))
+                        <nav class="hide">
+                            @auth
+                                <a href="{{ url('/dashboard') }}">Beranda</a>
+                            @else
+                                <a href="{{ route('login') }}">Login</a>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}">Daftar</a>
+                                @endif
+                            @endauth
+                        </nav>
                     @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</header>
+<section class="banner-area relative" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
+            <div class="banner-content col-lg-6 col-md-12">
+                <h1>
+                    <strong>
+                        Sistem Manajemen Acara
+                    </strong>
+                </h1>
+                <h4 style="color: white;">Universitas Atma Jaya Yogyakarta</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{{ asset('frontend/js/vendor/jquery-2.2.4.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="{{ asset('frontend/js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('frontend/js/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ asset('frontend/js/availability-calendar.js') }}"></script>
+<script src="{{ asset('frontend/js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('frontend/js/parallax.min.js') }}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{ asset('frontend/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('frontend/js/main.js') }}"></script>
+</body>
 </html>
